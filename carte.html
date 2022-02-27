@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu </title>
+        <link rel="stylesheet" href="cartebancaire.css">
+    </head>
+    
+<body>
+  <ul class="menu">
+    <li>
+        <a href="menu.html" class="actif">Accueil</a>
+    </li>
+     <li>
+       <a href="restaurant.html" class="actif">Le Restaurant</a>
+     </li>
+     <li>
+       <a href="plats.html">Carte et menu</a>
+     </li>
+     <li>
+       <a href="contact.html">Contact</a>
+     </li>
+     <li>
+       <a href="galerie.html">Galerie</a>
+     </li>
+      <li>
+       <a href="reserver.html">Reserver</a>
+     </li>
+             
+     <li>
+       <a href="commander.html">Commander en ligne</a>
+     </li>
+     <li>
+       <a href="connecter.html" class="actif">Se connecter</a>
+     </li>
+ </ul>
+ <br><br>
+<form>
+        <h1>Formulaire de paiement</h1>
+        <p>Les champs obligatoires sont suivis par <strong><abbr title="required">*</abbr></strong>.</p>
+        <section>
+            <h2>Informations de contact</h2>
+            <fieldset>
+              <legend>Qualité</legend>
+              <ul>
+                  <li>
+                    <label for="title_1">
+                      <input type="radio" id="title_1" name="title" value="M." >
+                      Monsieur
+                    </label>
+                  </li>
+                  <li>
+                    <label for="title_2">
+                      <input type="radio" id="title_2" name="title" value="Mme.">
+                      Madame
+                    </label>
+                  </li>
+              </ul>
+            </fieldset>
+            <p>
+              <label for="name">
+                <span>Nom :</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="text" id="name" name="username">
+            </p>
+            <p>
+              <label for="mail">
+                <span>e-mail :</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="email" id="mail" name="usermail">
+            </p>
+            <p>
+              <label for="password">
+                <span>Mot de passe :</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="password" id="pwd" name="password">
+            </p>
+        </section>
+        <section>
+            <h2>Informations de paiement</h2>
+            <p>
+              <label for="card">
+                <span>Type de carte :</span>
+              </label>
+              <select id="card" name="usercard">
+                <option value="visa">Visa</option>
+                <option value="mc">Mastercard</option>
+                <option value="amex">American Express</option>
+              </select>
+            </p>
+            <p>
+              <label for="number">
+                <span>Numéro :</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+                <input type="text" id="number" name="cardnumber">
+            </p>
+            <p>
+              <label for="date">
+                <span>Validité :</span>
+                <strong><abbr title="required">*</abbr></strong>
+                <em>format mm/aa</em>
+              </label>
+              <input type="text" id="date" name="expiration">
+            </p>
+            <p>
+              <label for="cvc">
+                <span>cvc :</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+                <input type="text" id="number" name="cardnumber">
+            </p>
+
+           
+            <section>
+                <h2>Adresse de livraisson</h2>
+                <p>
+                  <label for="adresse">
+                    <span>Adresse :</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                  </label>
+                  <input type="text" id="adresse" name="adresse">
+                </p>
+                <p>
+                  <label for="codepostal">
+                    <span>Code Postal :</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                  </label>
+                  <input type="codepostal" id="codepostal" name="codepostal">
+                </p>
+                <p>
+                  <label for="Pays">
+                    <span>Pays :</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                  </label>
+                  <input type="pays" id="pwd" name="pays">
+                </p>
+            </section>
+
+        </section>
+        <section>
+            <p> <button type="submit">Valider le paiement</button> </p>
+        </section>
+    </form>
+</body>
+</html>

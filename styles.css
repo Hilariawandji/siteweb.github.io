@@ -1,0 +1,77 @@
+body {
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+    background-image: url("artafro.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: unset;
+    background-color: burlywood;
+}
+.container{
+    padding: 1pt;
+
+}
+.menu {
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    
+    justify-content: space-around;/* Alignements des liens dans le menu */
+}
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+  
+}
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: #D2691E;    /* Arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: yes;        /* Suppression du soulignement */
+   
+    border-radius: 4px;           /* Arrondis des bordures */
+    
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+.menu a.actif {    
+    background-color: #D2691E ; 
+    color: #FFFFFF ;
+    border-color: #FFFFFF ;
+}
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: #000000;
+    color: #ffe843;
+    border-color: #ffe843;
+}
+h1{
+    color: rgb(9, 3, 19);
+    font-family:'Times New Roman';
+    font-size: calc(40px);
+}
+h4{
+    color: rgb(9, 3, 19);
+    font-family:'Times New Roman';
+    font-size: calc(20px);
+}
+h5{
+    color: rgb(9, 3, 19);
+    font-family:'Times New Roman';
+    font-size: calc(30px);
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    background-color: chocolate;
+    color: white;
+  }
+  img{
+      width: 100px;
+      height: 100px;
+      
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILILA</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        th{
+            text-align: left;
+            
+        }
+    </style>
+</head>
+<body>
+     <ul class="menu">
+             <li>
+                 <a href="menu.html" class="actif">Accueil</a>
+             </li>
+              <li>
+                <a href="restaurant.html" class="actif">Le Restaurant</a>
+              </li>
+              <li>
+                <a href="plats.html">Carte et menu</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="galerie.html">Galerie</a>
+              </li>
+               <li>
+                <a href="reserver.html">Reserver</a>
+              </li>
+                      
+              <li>
+                <a href="commander.html">Commander en ligne</a>
+              </li>
+              <li>
+                <a href="connecter.html" class="actif">Se connecter</a>
+              </li>
+          </ul>
+    <p style="margin-left: 20%;">Se connecter</p>
+    <p style="margin-left: 25%;">Vous n'etes pas encore inscrit?  <a href="inscription.php">CRÉER UN COMPTE</a> </p>
+    <form action="seConnecter.php" method="post" autocomplete="off" style="margin-left: 30%;">
+       <label for="email">Email:</label><br>
+       <input type="email" name="email" id="email" style="border-width: 1pt; border-style: inset; border-color: gray;"><br><br>
+       <label for="password">Mot de Passe:</label><br>
+       <input type="password" name="password" id="password" style="border-width: 1pt; border-style: inset; border-color: gray;"><br><br>
+       <input type="submit" value="se connecter" style="border-style: outset; border-color: lightpink;">
+    </form><br>
+     </body>
+</html>

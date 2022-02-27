@@ -1,0 +1,130 @@
+body {
+    font-family: "Trebuchet MS";
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    background-color: rgb(240, 164, 71);
+}
+.menu {
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    
+    justify-content: space-around;/* Alignements des liens dans le menu */
+}
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+  
+}
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: #D2691E;    /* Arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: yes;        /* Suppression du soulignement */
+   
+    border-radius: 4px;           /* Arrondis des bordures */
+    
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+.menu a.actif {    
+    background-color: #D2691E ; 
+    color: #FFFFFF ;
+    border-color: #FFFFFF ;
+}
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: #000000;
+    color: #ffe843;
+    border-color: #ffe843;
+}
+h1{
+    color: rgb(75, 72, 72);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: underline;  
+}
+
+h2{
+    color: rgb(34, 27, 27);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+
+}
+p,h5{
+    color: white;
+}
+p{
+
+}
+
+.container{
+    align-content: center;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    background-color: chocolate;
+    color: white;
+}
+
+.Galerie{
+	margin-top: -100px;
+}  
+
+.Galerie .contenu{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.Galerie .contenu .box{
+	width: 350px;
+	margin: 20px;
+	border: 20px solid #fff;
+	box-shadow: 20px 15px 35px rgba(0,0,0,0.8);
+}
+.Galerie .contenu .box .inbox{
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+.Galerie .contenu .box .inbox .img{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	object-fit: fill;
+}
+img{
+	width: 350px;
+	height: 300px;
+    align-content: center;
+    
+}
+.Galerie .contenu .box .text{
+	text-align: center;
+	font-weight: solid, 350px;
+	color: #111;
+}
+
+.Galerie .contenu .box .text .h3{
+	font-weight: 400;
+}
+.Galerie .contenu{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+

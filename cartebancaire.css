@@ -1,0 +1,131 @@
+body {
+    font-family: "Trebuchet MS";
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    background-color: rgb(240, 164, 71);
+}
+.menu {
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    
+    justify-content: space-around;/* Alignements des liens dans le menu */
+}
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+  
+}
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: #D2691E;    /* Arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: yes;        /* Suppression du soulignement */
+   
+    border-radius: 4px;           /* Arrondis des bordures */
+    
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+.menu a.actif {    
+    background-color: #D2691E ; 
+    color: #FFFFFF ;
+    border-color: #FFFFFF ;
+}
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: #000000;
+    color: #ffe843;
+    border-color: #ffe843;
+}
+h1{
+    color: rgb(75, 72, 72);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: underline;  
+}
+img{
+	width: 350px;
+	height: 300px;
+    align-content: center;
+    
+}
+p,h5{
+    color: rgb(160, 60, 60);
+}
+p{ 
+    
+    h1 {
+      margin-top: 0;
+  }
+
+  ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+
+  form {
+      margin: 0 auto;
+      width: 450px;
+      padding: 1em;
+      border: 1px solid #CCC;
+      border-radius: 1em;
+  }
+
+  div+div {
+      margin-top: 1em;
+  }
+
+  label span {
+      display: inline-block;
+      width: 120px;
+      text-align: right;
+  }
+
+  input, textarea {
+      font: 1em sans-serif;
+      width: 250px;
+      box-sizing: border-box;
+      border: 1px solid #999;
+  }
+
+  input[type=checkbox], input[type=radio] {
+      width: auto;
+      border: none;
+  }
+
+  input:focus, textarea:focus {
+      border-color: #000;
+  }
+
+  textarea {
+      vertical-align: top;
+      height: 5em;
+      resize: vertical;
+  }
+
+  fieldset {
+      width: 250px;
+      box-sizing: border-box;
+      margin-left: 146px;
+      border: 1px solid #999;
+  }
+
+  button {
+      margin: 20px 0 0 124px;
+  }
+
+  label {
+    position: relative;
+  }
+
+  label em {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }

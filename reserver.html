@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BILILA</title>
+    <style>
+        th{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+     <ul class="menu">
+               <li>
+                   <a href="menu.html" class="actif">Accueil</a>
+               </li>
+              <li>
+                <a href="restaurant.html" class="actif">Le Restaurant</a>
+              </li>
+              <li>
+                <a href="plats.html">Carte et menu</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="galerie.html">Galerie</a>
+              </li>
+               <li>
+                <a href="reserver.html">Reserver</a>
+              </li>
+                      
+              <li>
+                <a href="commander.html">Commander en ligne</a>
+              </li>
+              <li>
+                <a href="connecter.html" class="actif">Se connecter</a>
+              </li>
+          </ul>
+<p style="margin-left: 20%;">RESERVER</p>
+    <form action="bilila.php" method="post" autocomplete="off" style="margin-left: 30%;">
+        <label for="nom">nom*:</label><br>
+        <input type="nom" name="nom" id="nom" style="border-width: 1pt; border-style: inset; border-color: gray;" required><br><br>
+
+        <label for="email">E-mail*:</label><br>
+        <input type="email" name="email" id="email" style="border-width: 1pt; border-style: inset; border-color: gray;" required="required"><br><br>
+
+        
+
+        <label for="téléphone">Téléphone*</label><br>
+        <input type="téléphone" name="téléphone" id="téléphone" style="border-width: 1pt; border-style: inset; border-color: gray;" required="required"><br><br>
+
+
+
+        <label for="Date">Date:</label><br>
+        <input type="Date" name="Date" id="Date" style="border-width: 1pt; border-style: inset; border-color: gray;"><br><br>
+
+        
+        <label for="time">Heure:</label><br>
+        <input type="time" name="time" id="time" style="border-width: 1pt; border-style: inset; border-color: gray;"><br><br>
+
+         <label for="nombre">Nombre de place*:</label>
+          <input type="number" id="nombre" name="nombre" min="1" max="10000" required="required">
+        <br><br>
+
+        <label for="Date">Message:</label><br>
+        <textarea name="message" rows="10" cols="30"></textarea>
+         <br><br>
+
+          <input type="submit" value="Envoyer ma reservation" style="border-style: outset; border-color: lightpink;">
+        </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILILA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        th{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+     <ul class="menu">
+              <li>
+                  <a href="menu.html" class="actif">Accueil</a>
+              </li>
+              <li>
+               <a href="restaurant.html" class="actif">Le Restaurant</a>
+              </li>
+              <li>
+                <a href="plats.html">Carte et menu</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="galerie.html">Galerie</a>
+              </li>
+               <li>
+                <a href="reserver.html">Reserver</a>
+              </li>
+                      
+              <li>
+                <a href="commander.html">Commander en ligne</a>
+              </li>
+              <li>
+                <a href="connecter.html" class="actif">Se connecter</a>
+              </li>
+          </ul>
+<div class="contactez-nous">
+<h1 style="text-align: center;">Contactez-nous</h1>
+<p style="text-align: center;">Un problème, une question, envie de nous envoyer un message? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+<form action="bilila.php" method="post" autocomplete="off" style="margin-left: 40%;">
+<div>
+<label for="nom">Votre nom</label><br>
+<input type="text" id="nom" name="nom" placeholder="Modou Pouye" required>
+</div>
+<div>
+<br>
+<label for="email">Votre e-mail</label><br>
+<input type="email" id="email" name="email" placeholder="modoupouye@gmail.com" required>
+</div>
+<br>
+<div>
+<label for="sujet">Quel est le sujet de votre message ?</label><br>
+<select name="sujet" id="sujet" required><br>
+<option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+<option value="probleme-compte">Problème avec mon compte</option>
+<option value="question-produit">Question à propos d’un produit</option>
+<option value="suivi-commande">Suivi de ma commande</option>
+<option value="autre">Autre...</option>
+</select>
+</div>
+<br>
+<div>
+<label for="message">Votre message</label><br>
+<textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required rows="10" cols="30"></textarea>
+</div>
+<br>
+<div>
+<button type="submit">Envoyer mon message</button>
+</div>
+</form>
+</div>
+ </body>
+</html>
